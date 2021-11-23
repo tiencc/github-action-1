@@ -20,4 +20,4 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - run: ./mvnw clean install
+      - run: sudo ./mvnw clean install
