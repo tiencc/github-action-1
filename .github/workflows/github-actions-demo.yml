@@ -20,5 +20,5 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - run: git update-index --chmod=+x ./mvnw
+      - run: git update-index --chmod=+x mvnw
       - run: ./mvnw clean install
