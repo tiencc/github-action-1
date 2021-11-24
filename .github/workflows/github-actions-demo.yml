@@ -24,3 +24,10 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: mvn test
+on: [workflow_dispatch]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Package
+        run: echo "Package jar file"
